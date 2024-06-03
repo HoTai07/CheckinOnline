@@ -87,6 +87,22 @@ git checkout -b fix/[your-branch-name]
 composer install
 ```
 
+## pint
+
+>Running pint 
+```
+./vendor/bin/pint
+```
+
+>You may also run Pint on specific files or directories:
+```
+./vendor/bin/pint app/Models
+```
+```
+./vendor/bin/pint app/Models/User.php
+```
+
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
