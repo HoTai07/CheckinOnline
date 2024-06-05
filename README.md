@@ -231,3 +231,26 @@ DATABASE_NAME: bookstore
 ```
 ./vendor/bin/pint
 ```
+### JWT Setup
+
+Install JWT composer:
+
+```
+composer require tymon/jwt-auth
+```
+
+Add service provider
+
+```
+'providers' => [
+
+    ...
+
+    Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
+]
+```
+Publish the config
+
+```
+php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
+```
